@@ -14,6 +14,11 @@ h1, h2 {
     font-family: "DM Serif Display", serif;
     color: #184f63;
     }
+
+.sharp-corners, .sharp-corners *{
+    border-radius: 0;
+}
+
 #hero {
     background-image: url("/assets/images/background.webp");
     background-color: lightgrey;
@@ -28,6 +33,21 @@ h1, h2 {
 #portfolio {
     background-color: #dbdcde;
 }
+
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+    }
+#portfolio .btn btn-outline-primary:hover {
+        color: #1f7798;
+}   
+#portfolio .card-text {
+    min-height: 120px;
+}
 #contact {
     background-color: white;
+}
+
+@media screen and (min-width: 1200px){
+   #portfolio .card-text  {min-height: auto;}
 }
